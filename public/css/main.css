@@ -1,7 +1,29 @@
 /* Custom Styles */
 body {
     font-family: 'Raleway', sans-serif;
-    padding: 60px;
+    padding: 2rem 2rem 10rem;
+    /* Default padding for small screens */
+}
+
+@media (min-width: 600px) {
+    body {
+        padding: 2rem 5rem 10rem;
+        /* Medium screen padding */
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        padding: 2rem 8rem 10rem;
+        /* Large screen padding */
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding: 2rem 10rem 10rem;
+        /* Extra large screen padding */
+    }
 }
 
 .about {
@@ -16,7 +38,6 @@ h1 {
 
 span {
     color: #de0f66;
-
 }
 
 h2 {
@@ -24,15 +45,15 @@ h2 {
     font-weight: 700;
 }
 
-
 h3 {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 4rem;
     color: #0a0a14;
-    margin: 30px 0;
+    margin: 0 0 30px 0;
 }
+
 
 p {
     font-size: 1.5rem;
@@ -40,34 +61,47 @@ p {
 }
 
 .image {
-    width: 98%;
-    height: 98%;
-    object-fit: cover;
-
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
 }
 
-section {
-    padding: 0.4rem 0;
+.container {
+    margin: 3rem 0;
 }
-
 
 /* Navbar */
+
+
 .navbar {
     background-color: #ffffff;
-    padding: 0 3%;
 }
 
 .nav-item {
-    color: #000;
+    font-size: 0.8rem;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    margin: 0 20px;
+    font-weight: 700;
+    margin: 0 0 0 2.5rem;
+}
+
+.nav-link {
+    color: #000;
 }
 
 .nav-link:hover {
-    color: #de0f66;
+    text-decoration: 2px underline #de0f66;
 }
 
+.resume {
+    color: #de0f66;
+    border: 1px solid #de0f66;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
 
 hr {
     border: 1px solid #de0f66;
@@ -76,6 +110,169 @@ hr {
     opacity: 0.5;
 }
 
+/* Skills section */
+#skills {
+    padding: 4rem 0;
+}
+
+.skill-box {
+    margin-bottom: 2rem;
+}
+
+.skill-content {
+    border: 1px solid #de0f66;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
+.skill-content img {
+    height: 60%;
+}
+
+.skill-content i {
+    color: #de0f66;
+    transition: all 0.3s ease;
+}
+
+
+
+.skill-content:hover {
+    border-color: #de0f66;
+    /* border color on hover */
+    transform: scale(1.05);
+    /* scale effect on hover */
+}
+
+.skill-content:hover i {
+    transform: rotate(360deg);
+}
+
+
+/* Project */
+/* Ensure all cards have the same height and different pastel background colors */
+.project-card {
+    height: 100%;
+    background-color: #f7f7f7;
+    /* Default pastel color */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-out {
+    padding: 1rem;
+}
+
+
+/* Specific pastel colors for each card */
+.project-card:nth-child(1) {
+    background-color: #55AD9B;
+    /* Light pink */
+}
+
+.project-card:nth-child(2) {
+    background-color: #C39898;
+    /* Light blue */
+}
+
+/* Add more pastel colors as needed */
+.project-card:nth-child(3) {
+    background-color: #F3D0D7;
+    /* Light green */
+}
+
+.project-card:nth-child(4) {
+    background-color: #D37676;
+    /* Light yellow */
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-family: "DM Serif Display", serif;
+    color: #0a0a14;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #0a0a14;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    color: #000;
+
+    flex-grow: 1;
+}
+
+.card-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-link {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.card-link:hover {
+    color: #de0f66;
+}
+
+/*contact*/
+
+#contact p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+
+.contact-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-social a {
+    margin: 0 10px;
+    transition: transform 0.3s;
+    color: #333;
+    /* Icon color */
+}
+
+.contact-social a:hover {
+    transform: scale(1.1);
+    color: #de0f66;
+    /* Hover color */
+}
+
+
+
+
+/* Typing Animation */
 .typing-cursor {
     display: inline-block;
     width: 8px;
@@ -83,7 +280,6 @@ hr {
     background-color: #000;
     animation: blink 1s infinite step-end;
 }
-
 
 @keyframes blink {
     50% {
