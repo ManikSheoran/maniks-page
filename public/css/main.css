@@ -277,15 +277,27 @@ hr {
     /* Hover color */
 }
 
-.upicon {
-    position: absolute;
-    right: -50px;
-    /* Start hidden off-screen */
+.scroll-up {
+    position: fixed;
     bottom: 20px;
+    right: 20px;
     z-index: 1000;
-    transition: right 0.3s ease-in-out;
-    /* Smooth transition */
+    /* Adjust the z-index if needed */
+}
 
+.scroll-up a {
+    text-decoration: none;
+}
+
+.scroll-up i {
+    color: #000;
+    /* Adjust the color as needed */
+}
+
+/* Optional: Add a hover effect */
+.scroll-up i:hover {
+    color: #de0f66;
+    /* Change the color on hover */
 }
 
 
@@ -388,4 +400,11 @@ input:checked+.slider .sun-icon {
 
 input:checked+.slider .moon-icon {
     opacity: 1;
+}
+
+/*chicky button*/
+
+
+.chicky-button .star:hover {
+    opacity: 0;
 }
