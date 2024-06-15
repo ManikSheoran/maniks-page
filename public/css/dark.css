@@ -34,6 +34,7 @@ body.dark-mode .nav-link:hover {
 
 body.dark-mode .resume {
     border: 1px solid #de0f66;
+    border-radius: 50%;
 }
 
 body.dark-mode hr {
