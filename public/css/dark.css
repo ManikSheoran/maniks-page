@@ -141,3 +141,9 @@ body.dark-mode #competitive-programming .score-number {
 body.dark-mode #competitive-programming .score-card[data-aos='fade-up'] {
     animation: fade-up 1s ease;
 }
+
+body.dark-mode a {
+    text-decoration: none;
+    color: #fff;
+
+}
