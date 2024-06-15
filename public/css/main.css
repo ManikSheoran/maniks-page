@@ -421,11 +421,12 @@ input:checked+.slider .moon-icon {
     /* Light mode background color */
     color: #000000;
     /* Light mode text color */
+
 }
 
 #competitive-programming .section-subtitle {
     font-size: 1.5rem;
-    color: #555;
+    color: #000;
     /* Subtitle color */
 }
 
@@ -437,11 +438,13 @@ input:checked+.slider .moon-icon {
     padding: 1.5rem;
     margin-bottom: 2rem;
     transition: background-color 0.3s ease;
+
+    height: 8rem;
     /* Box border */
 }
 
 #competitive-programming .score-card h4 {
-    font-size: 2rem;
+    font-size: 120%;
     font-weight: 700;
     margin-bottom: 1rem;
 }
