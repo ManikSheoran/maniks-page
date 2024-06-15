@@ -96,3 +96,48 @@ body.dark-mode .scroll-up i {
     color: #f7f6f6;
     /* Adjust the color as needed */
 }
+
+/*cp*/
+/* styles.css */
+
+/* dark-mode.css */
+
+/* Competitive Programming Scores Section - Dark Mode */
+
+/* dark-mode.css */
+
+body.dark-mode #competitive-programming {
+    background-color: #121212;
+    /* Dark mode background color */
+    color: #e0e0e0;
+    /* Dark mode text color */
+}
+
+body.dark-mode #competitive-programming .section-subtitle {
+    color: #999;
+    /* Subtitle color in dark mode */
+}
+
+body.dark-mode #competitive-programming .score-card {
+    background-color: #1f1f1f;
+    /* Dark mode card background color */
+    color: #e0e0e0;
+    /* Dark mode text color */
+    border: 1px solid #333;
+    /* Box border */
+}
+
+body.dark-mode #competitive-programming .score-card h4 {
+    color: #fff;
+    /* Card title color in dark mode */
+}
+
+body.dark-mode #competitive-programming .score-number {
+    color: #de0f66;
+    /* Score number color in dark mode */
+}
+
+/* Animation */
+body.dark-mode #competitive-programming .score-card[data-aos='fade-up'] {
+    animation: fade-up 1s ease;
+}

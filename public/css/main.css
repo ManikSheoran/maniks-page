@@ -408,3 +408,75 @@ input:checked+.slider .moon-icon {
 .chicky-button .star:hover {
     opacity: 0;
 }
+
+
+
+/*cp*/
+/* light-mode.css */
+
+/* Competitive Programming Scores Section - Light Mode */
+#competitive-programming {
+    padding: 4rem 0;
+    background-color: #ffffff;
+    /* Light mode background color */
+    color: #000000;
+    /* Light mode text color */
+}
+
+#competitive-programming .section-subtitle {
+    font-size: 1.5rem;
+    color: #555;
+    /* Subtitle color */
+}
+
+#competitive-programming .score-card {
+
+    border: 1px solid #de0f66;
+    /* Light mode card background color */
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease;
+    /* Box border */
+}
+
+#competitive-programming .score-card h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#competitive-programming .score-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #de0f66;
+    /* Score number color */
+}
+
+/* Animation */
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#competitive-programming .score-card[data-aos='fade-up'] {
+    animation: fade-up 1s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #competitive-programming .score-card {
+        padding: 1rem;
+    }
+
+    #competitive-programming .score-number {
+        font-size: 2rem;
+    }
+}
