@@ -91,3 +91,8 @@ body.dark-mode .contact-social a:hover {
 body.dark-mode .card-img-top {
     filter: brightness(0.8);
 }
+
+body.dark-mode .scroll-up i {
+    color: #f7f6f6;
+    /* Adjust the color as needed */
+}
