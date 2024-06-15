@@ -34,7 +34,6 @@ body.dark-mode .nav-link:hover {
 
 body.dark-mode .resume {
     border: 1px solid #de0f66;
-    border-radius: 50%;
 }
 
 body.dark-mode hr {
@@ -42,7 +41,7 @@ body.dark-mode hr {
 }
 
 body.dark-mode .skill-content {
-    background-color: #1f1f1f;
+    background-color: #f7f6f6;
     border-color: #de0f66;
 }
 
@@ -55,8 +54,9 @@ body.dark-mode .project-card {
     color: #e0e0e0;
 }
 
+
 body.dark-mode .project-card:nth-child(1) {
-    background-color: #12574e !important;
+    background-color: #6e023f !important;
     /* Darker shade of light pink */
 }
 
