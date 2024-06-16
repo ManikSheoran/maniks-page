@@ -1,4 +1,4 @@
-const careers = ["Student", "Web Developer", "UI/UX Designer"];
+const careers = ["Student", "Web Developer"];
 let index = 0;
 let charIndex = 0;
 let isDeleting = false;
